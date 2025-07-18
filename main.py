@@ -21,6 +21,8 @@ class Game:
     def __init__(self):
         pygame.init()
         
+        # Initialize display with fullscreen support
+        self.fullscreen = False
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
         pygame.display.set_caption("nQuester: Incubator Rush")
         self.clock = pygame.time.Clock()
@@ -98,6 +100,17 @@ class Game:
             self.sound_manager.play_background_music()
             print("🎵 Background music started")
     
+    def toggle_fullscreen(self):
+        """Toggle between fullscreen and windowed mode"""
+        self.fullscreen = not self.fullscreen
+        if self.fullscreen:
+            # Get the display info for fullscreen
+            info = pygame.display.Info()
+            self.screen = pygame.display.set_mode((info.current_w, info.current_h), pygame.FULLSCREEN)
+        else:
+            self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+        print(f"🖥️ Fullscreen: {'ON' if self.fullscreen else 'OFF'}")
+    
     def handle_events(self):
         """Handle game events"""
         current_time = pygame.time.get_ticks()
@@ -163,6 +176,9 @@ class Game:
                         else:
                             if self.sound_manager:
                                 self.sound_manager.play_sound("error")
+                
+                elif event.key == pygame.K_F11:
+                    self.toggle_fullscreen()
     
     def try_npc_interaction(self):
         """Try to interact with nearby NPCs and doors"""

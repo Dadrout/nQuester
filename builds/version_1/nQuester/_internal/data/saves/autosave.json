@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-07-18T10:32:00.835551",
+  "player": {
+    "position": [
+      839.2185424949221,
+      796.9439392393407
+    ],
+    "current_users": 918,
+    "inventory": {},
+    "quest_log": []
+  },
+  "game_stats": {
+    "completed_quests": 0,
+    "swift_quests": 0,
+    "ai_quests": 0,
+    "typescript_quests": 0,
+    "bugs_found": 0,
+    "users": 918,
+    "fastest_quest_time": 999,
+    "perfect_quests": 0,
+    "mentors_met": 0
+  },
+  "completed_quests": [
+    "quest_diana_frontend"
+  ],
+  "active_quests": [],
+  "achievements": {
+    "first_quest": false,
+    "swift_master": false,
+    "ai_expert": false,
+    "typescript_guru": false,
+    "debug_master": false,
+    "user_magnet": false,
+    "quest_hunter": false,
+    "speed_runner": false,
+    "perfectionist": false,
+    "mentor_friend": false
+  }
+}

@@ -1,0 +1,44 @@
+
+# nQuester Version 1 Build Info (macOS)
+Build Date: 2025-07-18 10:35:04
+Version: 1.0
+Platform: macOS
+
+Features:
+- Fullscreen support (F11)
+- Diana mentor fixed
+- Shoqan specialization corrected
+- All mentors working
+- Complete quest system
+- Multiple minigames
+- Achievement system
+- Save/Load system
+- Sound effects and music
+
+Controls:
+- WASD/Arrows: Move
+- E: Interact
+- Q/Tab: Journal
+- F5: Quick Save
+- F9: Quick Load
+- F11: Toggle Fullscreen
+- ESC: Exit/Menu
+
+Mentors Available:
+- Alikhan (iOS)
+- Alibeck (AI/ML)
+- Bahredin (TypeScript)
+- Bahaudin (Backend)
+- Gaziz (Frontend)
+- Shoqan (Frontend)
+- Zhasulan (iOS)
+- Aimurat (AI/ML)
+- Bernar (BOSS)
+- Diana (Frontend)
+- Tamyrlan (Backend)
+
+To run the game:
+1. Open Terminal
+2. Navigate to this folder
+3. Run: ./launch.sh
+4. Or double-click: nQuester/nQuester

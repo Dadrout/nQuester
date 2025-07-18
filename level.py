@@ -158,8 +158,8 @@ class Level:
                 ], user_reward=mentor_reward)
             elif npc.name == "Shoqan":
                 npc.set_quest("quest_shoqan_01", [
-                    "Мобильное приложение крашится.",
-                    "Отлади Android/iOS код!"
+                    "У меня проблема с React компонентом.",
+                    "Найди и исправь баги в JavaScript коде!"
                 ], user_reward=mentor_reward)
             elif npc.name == "Zhasulan":
                 npc.set_quest("quest_zhasulan_01", [

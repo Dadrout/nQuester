@@ -144,7 +144,8 @@ class SpriteLoader:
         """Загружает лица менторов для диалогов"""
         mentor_files = [
             "Alikhan.png", "Alibeck.png", "Bahredin.png", "Bahaudin.png",
-            "Gaziz.png", "Shoqan.png", "Zhasulan.png", "Aimurat.png", "Bernar.png"
+            "Gaziz.png", "Shoqan.png", "Zhasulan.png", "Aimurat.png", "Bernar.png",
+            "Diana.png", "Tamyrlan.png"  # Added Diana and Tamyrlan
         ]
         
         for mentor_file in mentor_files:

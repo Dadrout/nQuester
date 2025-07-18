@@ -252,6 +252,7 @@ class MainMenu:
         instructions = [
             "↑↓ - Выбор опции",
             "Enter - Подтвердить",
+            "F11 - Полноэкранный режим",
             "ESC - Выход"
         ]
         
@@ -284,8 +285,23 @@ class MainMenu:
                     return self.selected_option
                 elif event.key == pygame.K_ESCAPE:
                     return len(self.menu_options) - 1  # Exit option
+                elif event.key == pygame.K_F11:
+                    # Toggle fullscreen
+                    self.toggle_fullscreen()
         
         return None
+    
+    def toggle_fullscreen(self):
+        """Toggle between fullscreen and windowed mode"""
+        if pygame.display.get_surface().get_flags() & pygame.FULLSCREEN:
+            # Currently fullscreen, switch to windowed
+            self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+            print("🖥️ Fullscreen: OFF")
+        else:
+            # Currently windowed, switch to fullscreen
+            info = pygame.display.Info()
+            self.screen = pygame.display.set_mode((info.current_w, info.current_h), pygame.FULLSCREEN)
+            print("��️ Fullscreen: ON")
     
     def run(self):
         """Run the main menu loop"""
@@ -341,6 +357,7 @@ def show_how_to_play(screen):
         "📖 Журнал: Q или Tab",
         "💾 Сохранение: F5",
         "📂 Загрузка: F9",
+        "🖥️ Полноэкранный режим: F11",
         "",
         "🎯 Цель:",
         "• Выполняй квесты менторов",

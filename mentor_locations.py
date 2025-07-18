@@ -218,10 +218,12 @@ class MentorLocationManager:
             ("Bahredin", "TypeScript"),
             ("Bahaudin", "Backend"),
             ("Gaziz", "Frontend"),
-            ("Shoqan", "Mobile"),
+            ("Shoqan", "Frontend"),  # Fixed: changed from Mobile to Frontend
             ("Zhasulan", "iOS"),
             ("Aimurat", "AI/ML"),
-            ("Bernar", "BOSS")
+            ("Bernar", "BOSS"),
+            ("Diana", "Frontend"),  # Added Diana mentor
+            ("Tamyrlan", "Backend")  # Added Tamyrlan mentor
         ]
         
         print("Creating mentor locations...")
